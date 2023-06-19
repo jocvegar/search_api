@@ -66,6 +66,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    ansi (1.5.0)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -104,6 +105,11 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.18.1)
+    minitest-reporters (1.6.0)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     msgpack (1.7.1)
     net-imap (0.3.6)
       date
@@ -154,6 +160,7 @@ GEM
     rake (13.0.6)
     reline (0.3.5)
       io-console (~> 0.5)
+    ruby-progressbar (1.13.0)
     thor (1.2.2)
     timeout (0.3.2)
     tzinfo (2.0.6)
@@ -172,6 +179,7 @@ DEPENDENCIES
   factory_bot_rails
   ffaker (~> 2.21)
   jbuilder
+  minitest-reporters
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.5)
