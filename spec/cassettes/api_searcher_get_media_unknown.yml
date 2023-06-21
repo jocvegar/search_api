@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/unknown?api_key=<api_key>&query=example
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 21 Jun 2023 14:05:06 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=27880
+      X-Memc:
+      - MISS
+      X-Memc-Key:
+      - 443bcb61193fad42fb4246b2c09a8afd
+      X-Memc-Age:
+      - '0'
+      X-Memc-Expires:
+      - '27880'
+      Vary:
+      - Accept-Encoding
+      - Origin
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 011deabeb2c50745b948f7be2ecfa71a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MIA3-C5
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - 4T3D-iSSIia1dE6H7-b_GHdogWjsS8CQWPBnKC6yVqK2PHFYFCylXg==
+      Age:
+      - '859'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":false,"status_code":34,"status_message":"The resource you
+        requested could not be found."}'
+  recorded_at: Wed, 21 Jun 2023 14:19:25 GMT
+recorded_with: VCR 6.1.0
