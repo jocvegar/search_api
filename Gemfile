@@ -42,6 +42,9 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'minitest-reporters'
   gem 'byebug'
+  gem 'rspec-rails', ">= 3.9.0"
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development do
