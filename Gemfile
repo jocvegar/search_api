@@ -41,6 +41,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'factory_bot_rails'
   gem 'minitest-reporters'
+  gem 'byebug'
 end
 
 group :development do
@@ -50,3 +51,9 @@ end
 
 
 gem "ffaker", "~> 2.21"
+
+gem "httparty", "~> 0.21.0"
+
+gem "themoviedb-api", "~> 1.4"
+
+gem "dotenv-rails", "~> 2.8"
