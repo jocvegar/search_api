@@ -6,7 +6,7 @@ class Api::V1::MediaSearchController < ApplicationController
     media_type = params["media_type"]
 
     if query.present?
-      searcher = ApiSearcher.new.get_media(media_type, query)
+      searcher = ApiSearcher.new.get_media(media_type, query.parameterize)
       render json: searcher
     else
       render json: "Please input search term"
